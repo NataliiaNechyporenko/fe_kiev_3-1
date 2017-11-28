@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Tahoma'; 
+    src: url(../fonts/tahoma.ttf);
+	}
+
+.product-item-container{
+	box-sizing: border-box;
+	height: 550px;
+	padding: 10px;
+	width: 400px;	
+}
+
+.product-item {
+	border: 2px solid #5a5a5a;
+	box-sizing: border-box;
+	height: 530px;
+	text-align: center;
+	width: 380px;
+}
+
+.product-item__name {
+	height: 52px;
+	margin: 10px auto;
+	width: 300px;		
+}
+
+.product-item__name a,
+.product-item__name a:hover,
+.product-item__name a:visited,
+.product-item__name a:active {
+	color: #242424;
+	display: block;
+	font: 500 22px/26px 'Tahoma', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.card-product__img {
+	margin-top: 13px;
+}
+
+.product-item__label-installment {
+	background: #8bc144;
+	box-sizing: border-box;
+	-webkit-box-shadow: -3px 3px 0px 0px rgba(156,156,156,1);
+	-moz-box-shadow: -3px 3px 0px 0px rgba(156,156,156,1);
+	box-shadow: -3px 3px 0px 0px rgba(156,156,156,1);
+	color: #fff;
+	display: block;
+	font: 22px 'Tahoma', sans-serif;
+	letter-spacing: 1px;
+	height: 31px;
+	padding-left: 36px;
+	text-align: left;
+	width: 190px;
+}
+
+.product-item__price span {
+	display: block;
+	font: 500 31px/68px 'Tahoma', sans-serif;
+	letter-spacing: 1px;
+	margin-left: 122px;
+	text-align: left;
+	width: 160px;
+}
+.button__add-to-cart {
+	background: #ff0000;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(133,0,0,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(133,0,0,1);
+	box-shadow: 0px 4px 0px 0px rgba(133,0,0,1);
+	color: #fff;
+	display: block;
+	font: 28px 'Tahoma', sans-serif;
+	height: 46px;
+	letter-spacing: 1px;
+	line-height: 42px;
+	margin-left: 62px;
+	padding-left: 12px;
+	text-decoration: none;
+	text-shadow: -1px 1px 0px #000000;
+	width: 229px;
+}

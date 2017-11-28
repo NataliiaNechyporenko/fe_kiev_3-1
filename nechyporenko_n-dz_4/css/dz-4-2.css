@@ -1,0 +1,47 @@
+/* html, body {
+	height: 100%;
+}
+.content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+*/
+.checkerboard {
+	width: 600px;
+	height: 600px;
+	display: flex;
+	flex-flow: row wrap;	
+}
+
+.check-cell {
+	background-color: #fff;
+	width: 200px;
+	height: 200px;
+}
+
+.check-cell:nth-child(2n+1) {
+	background-color: #850000;	
+}
+
+.check-cell:nth-child(2) {
+	background: url(../img/black_bishop-512.png) no-repeat;	
+	background-size: 90%;
+	background-position: center center;
+}
+
+.check-cell:nth-child(4) {
+	background: url(../img/white_knight-512.png) no-repeat;	
+	background-size: 90%;
+	background-position: 13px 10px;
+}
+
+.check-cell:nth-child(8) {
+	background: url(../img/white_rook-512.png) no-repeat;	
+	background-size: 90%;
+	background-position: 11px 9px;
+}
+
+/*89.34228187919463%;*/
