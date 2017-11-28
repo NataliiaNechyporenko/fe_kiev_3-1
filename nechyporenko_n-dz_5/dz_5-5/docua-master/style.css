@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Verdana';
+    src: url(fonts/Verdana.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url(fonts/Verdana-Italic.woff);
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url(fonts/Verdana-Bold.woff);
+    font-style: normal;
+    font-weight: bold;
+}
+
+p {
+    font: 400 14px/18px 'Verdana', sans-serif;
+    text-align: left;
+    margin-bottom: 34px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #0e62c9;
+}
+
+.page-container {
+    background-color: #d1d1d1;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 57px 60px 34px;
+    width: 760px;
+}
+
+.header {
+    background: url(assets/header_bg.gif) no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 100%;
+}
+
+.content {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.friends {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-card-big-wrapper, .service-card-wrapper {
+    overflow: auto;
+}
+
+.service-card-big {
+    float: left;
+    margin-bottom: 30px;
+    min-height: 343px;
+    position: relative;
+    width: 255px;
+}
+
+.service-card-big:first-child {
+    margin-right: 30px;
+}
+
+.service-card-big:last-child::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.service_img {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.service_add-order {
+    position: absolute;
+    bottom: 0;
+}
+
+.service_add-order, .link-fb-like {
+    background-color: #d65c4b;
+    border: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font: bold 14px/18px 'Verdana', sans-serif;
+    display: block;
+    line-height: 41px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.service_add-order:hover, .link-fb-like:hover, .service_add-order:active, .link-fb-like:active, .service_add-order:visited, .link-fb-like:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.service-card {
+    float: left;
+    margin: 0 30px 30px 0;
+    min-height: 365px;
+    position: relative;
+    width: 160px;
+}
+
+.service-card:last-child {
+    margin-right: 0;
+}
+
+.service-card>p, .signature, .content div+p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-style: italic;
+}
+
+.link-fb-like {
+    margin-top: 60px;
+}
+
+.unsubscribe {
+    color: #fff;
+    font: normal 12px/22px 'Verdana', sans-serif;
+    margin: 45px 0 0;
+    text-align: center;
+}
+
+.unsubscribe a {
+    color: #fff;
+    font-weight: bold;
+}
