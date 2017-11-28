@@ -1,0 +1,36 @@
+.contant-container {
+	padding: 40px 50px;
+	font-family: 'Roboto', sans-serif;
+}
+.text {
+	font-size: 18px;
+	font-weight: 300;
+}
+.list-links {
+	background: #ececec;
+	margin: 25px 0;
+	width: 250px;
+}
+.list-links > li {
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.list-links > li:first-child {
+	border-bottom: 1px solid #ccc;
+}
+.list-links > li:hover {
+	background: #2963aa;
+	color: #fff;
+}
+.list-links > li > a {
+	color: #333;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+}
+.list-links > li > a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
