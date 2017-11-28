@@ -1,0 +1,4 @@
+.some-class::after {
+	content: "*";
+	margin-left: 30px;
+}

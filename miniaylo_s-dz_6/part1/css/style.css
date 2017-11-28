@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url("../../fonts/georgia.woff") format("woff"), url("../../fonts/Georgia.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+.green {
+  margin-bottom: 20px;
+  background-color: #008000; }
+
+.green:hover {
+  background-color: #ff0; }
+
+.green:active {
+  background-color: #f00; }
+
+.violet {
+  margin: 20px 0;
+  background-color: #EE82EE; }
+
+.violet:hover {
+  background-color: #A52A2A; }
+
+.violet:active {
+  background-color: #FFD700; }
+
+.tooltip {
+  margin: 20px;
+  background: #000;
+  position: relative;
+  width: 100px;
+  height: 50px; }
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 15px;
+  border: 10px solid transparent;
+  border-right: 20px solid #000; }
+
+.stylized p:first-letter {
+  color: #F00;
+  font-family: Georgia, sans-serif;
+  font-size: 2em; }
+.stylized p:nth-child(even) {
+  background-color: #666; }
+.stylized p::before {
+  font-size: 25px;
+  float: left;
+  content: "\002602"; }
+.stylized p::after {
+  content: "*"; }
+
+input:focus {
+  border: 3px solid #008000;
+  font-size: 20px;
+  outline-color: #0f0; }
+
+/*# sourceMappingURL=style.css.map */

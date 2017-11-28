@@ -1,0 +1,152 @@
+body {
+	font: 12px arial, sans-serif;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr {
+	border-top: 1px solid #ccc;
+}
+
+
+tr:hover {
+	background-color: #f0f0f0;
+}
+
+ thead tr {
+	border: none;
+	text-align: left;
+}
+th {
+	padding: 16px 8px 11px;
+}
+
+td {
+	text-align: left;
+	padding: 11px 8px 24px 8px;
+	letter-spacing: 0.001em;
+}
+
+.wrapper {
+	margin: 21px 15px;
+	-webkit-box-shadow: 0 0 5px 5px  #ccc;
+	box-shadow: 0 0 5px 5px  #ccc;
+	border-radius: 5px;
+	width: 670px;
+	padding: 10px 15px;
+	position: relative;
+	background-color: #fcfcfc;
+}
+
+.shop-list {
+	margin-bottom: 22px;
+}
+
+.first-col {
+	width: 145px;
+}
+
+.special-cell {
+	width: 186px;
+	position: relative;
+}
+
+.item_name {
+	text-decoration: none;
+	color: #f00;
+	letter-spacing: 0.015em;
+}
+
+.adjustment-btn {
+	position: absolute;
+	border: none;
+	display: block;
+	background-color: #f00;
+	width: 32px;
+	height: 32px;
+	color: #fff;
+	padding: 9px 11px;
+	top: 9px;
+	left: 8px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.minus-btn {
+	left: 43px;
+}
+
+.delete-btn {
+	left: 78px;
+	width: 59px;
+	padding: 11px 8px;
+	font-size: 9px;
+	font-stretch: extra-condensed;
+	text-transform: uppercase;
+}
+
+.btn-buy {
+	color: #f00;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.purchase-price {
+	font-size: 14px;
+	text-align: right;
+	border-right: 5px solid #f0f0f0;
+	padding-right: 15px; 
+	line-height: 21px;
+	letter-spacing: 0.001em;
+}
+
+.discount-price {
+	font-size: 16px;
+}
+
+.full-price {
+	color: #ccc;
+	letter-spacing: 0.01em;
+}
+
+.btn-buy {
+	display: block;
+	margin: 34px auto 15px;
+	width: 200px;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0.001em;
+	font-family: 'Open sans', arial, sans-serif;
+}
+
+.btn-buy:hover {
+	box-shadow: 0px 0px 5px 5px #f00;
+	border-radius: 7px;
+}
+
+.btn-close {
+	display: block;
+	position: absolute;
+	background-color: #000;
+	color: #fff;
+	padding: 3px 6px 4px;
+	font-size: 15px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 9px 0 #000;
+	top: -14px;
+	right: -14px;
+	z-index: 10;
+	cursor: pointer;
+}
+.not-active {
+	opacity: 0.6;
+}

@@ -1,0 +1,50 @@
+.p1 {
+    background-color: green;
+}
+.p2 {
+    background-color: violet;
+}
+.p1:hover {
+    background-color: yellow;
+}
+.p2:hover {
+    background-color: brown;
+}
+.p1:active {
+    background-color: red;
+}
+.p2:active {
+    background-color: gold;
+}
+input:focus {
+    border-color: green;
+}
+p:nth-child(4n) {
+    background-color: grey;
+}
+p:after {
+    content: '*';
+}
+p::before {
+    content: '\2602';
+}
+p::first-letter {
+    font-family: Georgia;
+    font-size: 2em;
+    color: red;
+}
+.figure {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    left: 100px;
+}
+.figure:after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    bottom: 20px;
+    border: 30px solid transparent;
+    border-right: 50px solid black;
+}

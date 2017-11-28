@@ -1,0 +1,23 @@
+table {
+	width: 777px;
+	border-collapse: collapse;
+	margin: 0 11px 0 26px;
+	font: 15px arial, sans-serif;
+}
+
+th {
+	text-align: left;
+}
+
+tr {
+	border-bottom: 1px solid #ccc;
+
+}
+
+th {
+	padding: 8px 0 18px 4px;
+}
+
+td {
+	padding: 17px 0 18px 4px;
+}

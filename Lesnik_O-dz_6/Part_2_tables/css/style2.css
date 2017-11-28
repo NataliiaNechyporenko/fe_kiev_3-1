@@ -1,0 +1,23 @@
+caption {
+    font-weight: bold;
+    margin: 20px;
+}
+table {
+    text-align: left;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+td, th {
+    padding: 20px;
+    padding-right: 150px;
+}
+th {
+    border-bottom: 1px solid lightgrey;
+    vertical-align: middle;
+}
+.colname {
+    width: 150px;
+}
+.tdborder {
+    border-bottom: 1px solid lightgrey;
+}

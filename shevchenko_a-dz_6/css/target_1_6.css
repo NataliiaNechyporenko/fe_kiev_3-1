@@ -1,0 +1,4 @@
+.some-class::before {
+	content: "\2602";
+	margin-right: 30px;
+}

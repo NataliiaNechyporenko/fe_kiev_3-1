@@ -1,0 +1,24 @@
+
+.p1 {
+	background-color: #0f0;
+}
+
+.p1:hover {
+	background-color: #ff0;
+}
+
+.p1:active {
+	background-color: #f00;
+}
+
+.p2 {
+	background-color: #800080;
+}
+
+.p2:hover {
+	background-color: #6e0000;
+}
+
+.p2:active {
+	background-color: #ffd700;
+}

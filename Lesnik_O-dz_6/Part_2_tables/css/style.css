@@ -1,0 +1,17 @@
+caption {
+    font-weight: bold;
+}
+table {
+    border: 2px solid grey;
+    text-align: center;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+td, th {
+    border: 2px solid grey;
+    padding: 8px;
+    font-weight: bold;
+}
+.name {
+    text-align: left;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cart-wrapper">
+        <form class="" action="index.html" method="post">
+            <table class="cart">
+                <tr>
+                    <th>Название</th>
+                    <th> Кол-во</th>
+                    <th>Цена</th>
+                    <th>Скидка</th>
+                    <th></th>
+                    <th>Итого</th>
+                </tr>
+                <tr class="border">
+                    <td>Медведь девочка</td>
+                    <td>1 шт.</td>
+                    <td>300р.</td>
+                    <td>50%</td>
+                    <td class="cart-btn">
+                        <button class="cart__btn-count" type="button" title="добавить">+</button>
+                        <button class="cart__btn-count" type="button" title="убавить">-</button>
+                        <button class="cart__btn-delete" type="button">УДАЛИТЬ</button>
+                    </td>
+                    <td>300р.</td>
+                </tr>
+                <tr class="border">
+                    <td>Динозавр</td>
+                    <td>1 шт.</td>
+                    <td>100р.</td>
+                    <td>&#8212;</td>
+                    <td class="cart-btn">
+                        <button class="cart__btn-count" type="button" title="добавить">+</button>
+                        <button class="cart__btn-count" type="button" name="button">&#8722;</button>
+                        <button class="cart__btn-delete" type="button">УДАЛИТЬ</button>
+                    </td>
+                    <td>100р.</td>
+                </tr>
+                <tr class="border">
+                    <td>Семейный домик</td>
+                    <td>1 шт.</td>
+                    <td>10 000р.</td>
+                    <td>&#8212;</td>
+                    <td class="cart-btn">
+                        <button class="cart__btn-count" type="button" title="добавить">+</button>
+                        <button class="cart__btn-count" type="button" name="button">&#8722;</button>
+                        <button class="cart__btn-delete" type="button">УДАЛИТЬ</button>
+                    </td>
+                    <td>10 000р.</td>
+                </tr>
+                <tr class="border">
+                    <td>Веселый горох</td>
+                    <td>1 шт.</td>
+                    <td>300р.</td>
+                    <td>&#8212;</td>
+                    <td class="cart-btn">
+                        <button class="cart__btn-count" type="button" title="добавить">+</button>
+                        <button class="cart__btn-count" type="button" name="button">&#8722;</button>
+                        <button class="cart__btn-delete" type="button">УДАЛИТЬ</button>
+                    </td>
+                    <td>300р.</td>
+                </tr>
+            </table>
+        </form>
+        <div class="cart__badge-close">
+            <a class="cart__bage-close_a" href="#">&#215;</a>
+        </div>
+        <div class="container">
+            <div class="order-summ">
+                <p class="cart__sum-discounted">4 шт. на сумму:  <span>10 700р.</span></p>
+                <p class="cart__full-sum"> Сумма без скидки: 11 000р.&#8212;</p>
+            </div>
+            <div class="goto-cart">
+                <a class="go-to-cart" href="#">перейти в корзину &#x2192;</a>
+            </div>
+        </div>
+    </div>
+
+    <table class="liters">
+        <tr>
+            <th rowspan="2">Напиток</th>
+            <th colspan="5">Человечек</th>
+        </tr>
+        <tr>
+            <td>Незнайка</td>
+            <td>Пончик</td>
+            <td>Торопыжка</td>
+            <td>Пилюлькин</td>
+            <td>Всего</td>
+        </tr>
+        <tr>
+            <td>Квас, л </td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Газировка, л</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Сироп, л</td>
+            <td>1</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Касторка, л</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Итого:</td>
+            <td>4</td>
+            <td>5</td>
+            <td>2</td>
+            <td>2</td>
+            <td>13</td>
+        </tr>
+    </table>
+
+    <table class="confectionery">
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Prise</th>
+        </tr>
+
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+        <tr>
+            <td>Shannon</td>
+            <td>KitKat</td>
+            <td>$9.99</td>
+        </tr>
+    </table>
+
+    <table class="confectionery-border-bottom">
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Prise</th>
+        </tr>
+
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+        <tr>
+            <td>Shannon</td>
+            <td>KitKat</td>
+            <td>$9.99</td>
+        </tr>
+    </table>
+</body>
+
+</html>
