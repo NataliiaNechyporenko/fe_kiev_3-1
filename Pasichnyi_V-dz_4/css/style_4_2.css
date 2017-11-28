@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+td {
+    border: 0;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.brown {
+    background-color: #791C16;
+}
