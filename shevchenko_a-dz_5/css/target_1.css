@@ -1,0 +1,13 @@
+/*Styles for target_1.html*/
+
+div {
+  width: 400px;
+}
+
+.img_1 {
+	float: left;
+}
+
+.img_2 {
+	float: right;
+}

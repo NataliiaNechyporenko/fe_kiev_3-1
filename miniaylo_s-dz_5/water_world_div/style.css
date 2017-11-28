@@ -1,0 +1,43 @@
+.clouds {
+  position: absolute;
+  left: 214px;
+  top: -7px; }
+  .clouds img {
+    width: 350px; }
+
+.container {
+  position: relative;
+  height: 448px;
+  width: 560px;
+  margin: 0 auto;
+  background-color: #7acdc6;
+  overflow: hidden; }
+
+.ship {
+  position: absolute;
+  left: 14px;
+  top: 287px;
+  width: 115px; }
+
+.water {
+  position: absolute;
+  height: 67px;
+  left: -7px;
+  top: 391px;
+  width: 572px; }
+
+.world {
+  position: absolute;
+  left: -5px; }
+  .world img {
+    height: 524px;
+    width: 569px; }
+
+.pictureedge {
+  background-color: #176C7F;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  top: 438px; }
+
+/*# sourceMappingURL=style.css.map */

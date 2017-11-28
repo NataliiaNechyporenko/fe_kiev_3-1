@@ -1,0 +1,37 @@
+/*Styles for target_7.html*/
+
+.main-block {
+  background-image: url(http://tutorial.promo.net.ua/images/js/setka3.png);
+  background-position: top left;
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.blue, .red, .yellow {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.red {
+  background: #f00;
+  left: 112px;
+  top: 121px;
+  z-index: 1;
+}
+
+.blue {
+  background: #00f;
+  left: 162px;
+  top: 161px;
+  z-index: 2;
+}
+
+.yellow {
+  background: #ff0;
+  left: 210px;
+  top: 204px;
+  z-index: 3;
+}

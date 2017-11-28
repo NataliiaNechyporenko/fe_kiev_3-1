@@ -1,0 +1,22 @@
+/*Styles for index.html*/
+
+.targets {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.targets__item {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.targets__item a {
+	color: #000;
+	text-decoration: none;
+}
+
+.targets__item a:hover {
+	color: #850000;
+	text-decoration: underline;
+}

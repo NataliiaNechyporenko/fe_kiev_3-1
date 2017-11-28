@@ -1,0 +1,205 @@
+@font-face {
+	font-family: 'Arial';
+	src: url("../fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url("../fonts/ArialBold/ArialBold.woff") format("woff"), url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+    	font-style: normal;
+	    font-weight: bold;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url("../fonts/ArialItalic/ArialItalic.woff") format("woff"), url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
+	    font-style: italic;
+	    font-weight: normal;
+}
+
+	$btn_a-color: #fff;
+
+	@mixin font-bold {
+		font-size: 15px;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+	}
+
+@mixin btn-reception {
+	border: none;
+	border-radius: 5px;
+	background-color: #f00;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	width: inherit;
+	@include font-bold;
+
+	a {
+		color: $btn_a-color;
+		text-decoration: none;
+	}
+}
+
+@mixin promo-offers {
+	float: left;
+
+	div {
+		@include btn-reception;
+	}
+
+	img {
+		height: 213px;
+		margin-bottom: 8px;
+	}
+}
+
+span {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.background {
+	background-color: #d1d1d1;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	margin: auto;
+	padding: 57px 6px 0 3px;
+	text-align: center;
+	width: 750px;
+}
+
+.cardio-usg {
+	@include promo-offers;
+		margin-bottom: 23px;
+		width: 160px;
+
+	p {
+		height: 108px;
+	}
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.expirience {
+	width: 550px;
+}
+
+.fixed-price {
+	margin: 23px 0 0;
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.float_wrap {
+	display: inline-block;
+	margin: 31px 0 0;
+}
+
+footer {
+	a {
+		color: $btn_a-color;
+	    font-family: Arial, sans-serif;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+		color: #fff;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 0.64em;
+		min-height: 67px;
+		line-height: 2.1em;
+		margin: auto;
+		padding-top: 42px;
+		width: 370px;
+}
+
+.gynecologist {
+	@include promo-offers;
+	margin-bottom: 30px;
+	width: 255px;
+
+	p {
+		height: 85px;
+	}
+}
+
+.gynecologist-usg {
+	@extend .cardio-usg;
+	margin-left: 30px;
+}
+
+.header-image {
+	max-width: 100%;
+    height: auto;
+}
+
+.facebook {
+    @include btn-reception;
+	margin-top: 54px;
+	width: 540px;
+
+	a {
+		text-decoration: none;
+	}
+	span {
+		font-family: Arial, sans-serif;
+		font-style: italic;
+	}
+}
+
+main {
+	h4 {
+		margin: 0 12px 10px 0;
+		text-align: center;
+	}
+	line-height: 1.45em;
+	margin: 51px 40px 0 50px;
+	text-align: left;
+}
+
+.neurologist {
+	@extend .cardio-usg;
+	margin-left: 30px;
+}
+
+.right-choice {
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	span {
+		font-family: Arial, sans-serif;
+		font-style: italic;
+	}
+}
+.teeth-clean {
+	@include promo-offers;
+	@extend .gynecologist;
+	margin-left: 30px;
+}
+
+.wrapper {
+	background-color: #fff;
+	font-size: 16px;
+	margin: auto;
+	padding-bottom: 30px;
+	text-align: center;
+    width: 641px;
+
+}
+
+.xdays-left {
+	margin: 33px 0 23px;
+}

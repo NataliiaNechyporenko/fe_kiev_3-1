@@ -1,0 +1,44 @@
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+footer {
+  border: 1px solid #000;
+  height: 104px; }
+
+.fullwrap {
+  border: 1px solid #000;
+  height: 700px;
+  line-height: 3em;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  width: 1000px; }
+
+header {
+  border: 1px solid #000;
+  width: inherit;
+  height: 50px; }
+
+main {
+  border: 1px solid #000;
+  float: left;
+  width: 50%;
+  margin: 20px;
+  height: 456px; }
+
+.sidebar {
+  border: 1px solid #000;
+  float: right;
+  height: 456px;
+  width: 35%;
+  margin: 20px; }
+
+.wrap {
+  border: 1px solid #000;
+  height: 500px;
+  width: 100%;
+  margin: 20px 0; }
+
+/*# sourceMappingURL=style.css.map */

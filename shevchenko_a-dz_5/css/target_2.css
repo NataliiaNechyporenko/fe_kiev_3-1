@@ -1,0 +1,21 @@
+/*Styles for target_2.html*/
+
+.parent {
+  width: 340px;
+  min-height: 20px;
+  background: #F60;
+}
+
+.rows {
+  width: 100px;
+  height: 100px;
+  background: #00F1FF;
+  margin: 5px;
+  float: left;
+}
+
+.parent::after {
+	content: "";
+	clear: both;
+  display: table;
+}

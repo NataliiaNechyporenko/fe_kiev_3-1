@@ -1,0 +1,54 @@
+
+@mixin border {
+    border: 1px solid #000;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer {
+    @include border;
+    height: 104px;
+}
+
+.fullwrap {
+    @include border;
+    height: 700px;
+    line-height: 3em;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    width: 1000px;
+}
+
+header {
+    @include border;
+    width: inherit;
+    height: 50px;
+}
+
+main {
+    @include border;
+    float: left;
+    width: 50%;
+    margin: 20px;
+    height: 456px;
+}
+
+.sidebar {
+    @include border;
+    float: right;
+    height: 456px;
+    width: 35%;
+    margin: 20px;
+}
+
+.wrap {
+    @include border;
+    height: 500px;
+    width: 100%;
+    margin: 20px 0;
+}

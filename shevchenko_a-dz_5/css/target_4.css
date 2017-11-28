@@ -1,0 +1,57 @@
+/*Styles for target_4.html*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.fullwrap {
+	background: #888;
+	/*height: 1400px;*/
+	height: 100%;
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 1200px;
+}
+
+.main-header {
+	background: #850000;
+	height: 200px;
+	margin: 10px auto 20px;
+	width: 1150px;
+}
+
+.wrap {
+	background: #333;
+	display: flow-root;
+	min-width: 500px;
+	margin: 10px auto 20px;
+	padding: 10px;
+	font-size: 20px;
+	width: 1150px;
+}
+
+.main-content {
+	background: #fff;
+	float: left;
+	height: 100%;
+	min-height: 500px;
+	width: 650px;
+}
+
+.right-sidebar {
+	background: #734;
+	float: right;
+	height: 100%;
+	min-height: 500px;
+	width: 400px;
+} 
+
+.main-footer {
+	background: #850000;
+	height: 200px;
+	margin: 10px auto 20px;
+	width: 1150px;
+}

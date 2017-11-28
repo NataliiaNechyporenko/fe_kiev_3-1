@@ -1,0 +1,20 @@
+/*Styles for target_3.html*/
+
+.parent {
+  width: 440px;
+  min-height: 20px;
+  background: #F60;
+}
+
+.rows {
+  width: 100px;
+  height: 100px;
+  background: #00F1FF;
+  margin: 5px;
+  float: left;
+}
+
+.clearfix {
+	content: "";
+	clear: both;
+}

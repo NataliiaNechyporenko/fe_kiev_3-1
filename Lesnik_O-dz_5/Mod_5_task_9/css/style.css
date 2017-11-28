@@ -1,0 +1,43 @@
+body {
+    margin: 0px 0px;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 25px auto;
+    width: 560px;
+    height: 447px;
+    background-color: #80cdc6;
+    position: relative;
+}
+
+.clouds {
+    width: 350px;
+    position: absolute;
+    top: -7px;
+    left: 214px;
+    clip: rect(7px, 346px, 350px, 0px);
+}
+
+.water {
+    width: 570px;
+    position: absolute;
+    top: 392px;
+    left: -6px;
+    clip: rect(0px, 566px, 350px, 6px);
+}
+
+.ship {
+    width: 115px;
+    position: absolute;
+    top: 287px;
+    left: 14px;
+}
+
+.world {
+    width: 570px;
+    position: absolute;
+    top: 94px;
+    left: -6px;
+    clip: rect(0px, 566px, 350px, 6px);
+}
