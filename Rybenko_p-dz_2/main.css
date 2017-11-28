@@ -1,0 +1,101 @@
+body {
+	background: blue;
+	padding: 5px 5px;
+	margin: 0;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+
+.red_block {
+	width: 90px;
+	background-color: red;
+	color: white;
+}
+.z2 {
+	background-color: white;
+	width: 300px;
+	border: 10px solid #000;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.blue_block {
+	background-color: blue;
+	width: 280px;
+	height: 40px;
+}
+.yellow_block {
+	background-color: yellow;
+	width: 280px;
+	height: 30px;
+}
+.z3 {
+	background-color: white;
+	width: 120px;
+	border: 10px solid #000;
+	padding: 0 5px;	
+	margin-bottom: 5px;
+}
+.one {
+	width: 40px;
+	background-color: red;
+	height: 40px;
+}
+.two {
+	height: 40px;
+	width: 80px;
+	background-color: #EB9814;
+}
+.three {
+	height: 40px;
+	width: 120px;
+	background-color: #3912CB;
+}
+.z4 {
+	border: 10px solid #000;
+	background-color: #FF7031;
+	font-size: 40px;
+	height: 150px;
+	width: 250px;
+	margin-bottom: 5px;
+}
+.z5 {
+	border: 10px solid #000;
+	background-color: #d7d7bf;
+	width: 400px;
+	margin-bottom: 5px;
+}
+.z5 h1 {
+	color: #5e2c0b;
+}
+.z5 h3 {
+	color: #9e8378;
+}
+.z5 a {
+	color: #32562a;
+}
+
+.z6 {
+	border: 4px dashed #000;
+	background-color: #fff;
+	width: 450px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+.italic {
+	font-style: italic;
+}
+.z7 {
+	border: 4px dashed #000;
+	background-color: #fff;
+	width: 450px;
+	padding-left: 5px;
+}
+.z7 sub {
+	color: blue;
+}
+.z7 sup {
+	color: red;
+}
