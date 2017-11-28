@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import 'reset';
+@import 'fonts';
+$max-width: 1400px;
+$table-width: 100%;
+$block-padding: 25px;
+$table1-padding: 8px;
+$table2-padding: 20px;
+$all-font: 'Roboto', sans-serif;
+$h1-font-size: 25px;
+$h2-font-size: $h1-font-size*0.75;
+$background-color: #f5f5f5;
+$text-color: #333;
+$text-font-size: 14px;
+$cart-main-color: #e7242a;
+$border-color: #ccc;
+
+@mixin text-font {
+    font-family: $all-font;
+    color: $text-color;
+}
+
+@mixin table-base ($table-padding, $text-align: left) {
+    background: $background-color;
+    border-collapse: collapse;
+    @include text-font;
+    font-size: $text-font-size;
+    width: $table-width;
+
+    %cell {
+        padding: $table-padding;
+        vertical-align: middle;
+        text-align: $text-align;
+        border-bottom: 1px solid $border-color;
+    }
+
+    td {
+        @extend %cell;
+    }
+
+    th {
+        @extend %cell;
+        font-weight: bold;
+    }
+}
+
+.content-container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $block-padding;
+}
+
+h1 {
+    @include text-font;
+    font-size: $h1-font-size;
+    margin: 30px 0;
+}
+
+h2 {
+    @include text-font;
+    font-size: $h2-font-size;
+    margin: 30px 0;
+}
+
+.table1 {
+    @include table-base ($table1-padding, center);
+    background: none;
+    font-size: 16px;
+
+    td,
+    th {
+        border: 1px solid $text-color;
+    }
+
+    tr:nth-child(n+3) {
+        td:first-child {
+            text-align: left;
+        }
+    }
+}
+
+.table2 {
+    @include table-base ($table2-padding);
+
+    td {
+        border-bottom: 0;
+    }
+}
+
+.table3 {
+    @include table-base ($table2-padding);
+}
+
+@mixin border ($border-radius, $border-color:$border-color, $border-width: 1px) {
+    border: $border-width solid $border-color;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+    -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+}
+
+.modal__cart {
+    @include border (10px);
+    @include text-font;
+    background-color: $background-color;
+    margin: 0 auto;
+    padding: 20px;
+    width: 700px;
+    position: relative;
+}
+
+.modal__cart-table {
+    @include table-base ($table1-padding);
+
+    td:first-child {
+        color: $cart-main-color;
+    }
+}
+
+.modal__cart-total-amount {
+    margin: 25px 0;
+    border-right: 4px solid $border-color;
+    text-align: right;
+    padding-right: 20px;
+
+    .cart-amount {
+        font: bold 16px/30px $all-font;
+    }
+
+    .cart-amount-without-discount {
+        color: $border-color;
+        font-size: 14px;
+    }
+}
+
+.modal__cart-cart-link {
+    display: block;
+    font: italic 20px/30px $all-font;
+    color: $cart-main-color;
+    text-align: center;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+        color: $text-color;
+    }
+
+    &:visited {
+        color: $cart-main-color;
+    }
+}
+
+.modal__cart-close-button {
+    @include border (50%, #fff, 2px);
+    height: 30px;
+    width: 30px;
+    background-color: $text-color;
+    color: #fff;
+    font: bold 16px/30px $all-font;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+@mixin button {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: $cart-main-color;
+    font: bold 16px/30px $all-font;
+    color: #fff;
+    text-align: center;
+    min-width: 30px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        color: $cart-main-color;
+        background-color: #fff;
+    }
+}
+
+.plus-product-quantity {
+    @include button;
+}
+
+.minus-product-quantity {
+    @include button;
+}
+
+.delete-product-button {
+    @include button;
+    background-color: $cart-main-color*1.7;
+    text-transform: uppercase;
+    font: bold 12px/30px $all-font;
+}

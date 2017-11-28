@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+    url(fonts/roboto-regular.woff2) format('woff2'),
+    url(fonts/roboto-regular.woff) format('woff');
+    }
+
+@font-face {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Georgia'), local('Georgia-Regular'),
+    url(fonts/georgia.woff) format('woff');
+    }
