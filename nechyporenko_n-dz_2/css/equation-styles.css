@@ -1,0 +1,18 @@
+p {
+	width: 420px;
+	border: 2px dashed #000;
+	line-height: 35px;
+	padding: 5px; 
+}
+sub,
+sup {
+	font-style: italic;
+}
+.red {
+	font-style: normal;
+	color: red;
+}
+.blue {
+	font-style: normal;
+	color: blue;
+}

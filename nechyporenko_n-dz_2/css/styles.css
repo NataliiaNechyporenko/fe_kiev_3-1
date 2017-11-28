@@ -1,0 +1,41 @@
+body {
+	/*background: blue;*/
+	background: #fff;
+}
+h2 {
+	background: red;
+	color: #fff;
+	width: 100px;
+}
+p {
+	width: 400px;
+	height: 60px;
+	background: #00f;
+	font: 20px serif;
+}
+p:nth-of-type(2) {
+	background: #ff0;
+	width: 400px;
+	height: 50px;
+}
+.one {
+	width: 50px;
+	height: 50px;
+	background: #f00;
+}
+.two {
+	width: 100px;
+	height: 50px;
+	background: #ffa500;
+}
+.three {
+	width: 150px;
+	height: 50px;
+}
+.joy {
+	height: 150px;
+	background: #ff733a;
+	font: 60px serif;
+	box-sizing: border-box;
+	padding: 30px;
+}
