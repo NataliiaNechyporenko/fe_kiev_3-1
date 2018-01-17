@@ -24,7 +24,7 @@ $title-color: #006064;
   margin: 0 auto;
   max-width: 1200px;
   min-height: 100vh;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .contant {
@@ -33,6 +33,14 @@ $title-color: #006064;
   justify-content: center;
   flex-direction: column;
   min-height: 100%;
+
+  &__text {
+      border-bottom: 1px solid $title-color;
+      display: block;
+      width: 48%;
+      min-height: 50px;
+      margin: 5px 0px;
+  }
 }
 
 .title {
@@ -41,7 +49,7 @@ $title-color: #006064;
 }
 
 .keyboard {
-  margin: 75px auto;
+  margin: 25px auto;
   width: 100%;
 
   &__row {
@@ -89,6 +97,37 @@ $title-color: #006064;
 
 .volume {
     display: block;
-    margin: 0 auto;
+    width: 48%;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 35px 50px 0 50px;
+}
+
+#startTraining {
+    display: block;
+    min-width: 150px;
+    background-color: #cdcdcd;
+    padding: 8px 25px;
+    border: 1px solid #333333;
+    border-radius: 5px;
     text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333;
+
+    &:hover {
+        background-color: rgb(3, 148, 118);
+        color: #fff;
+    }
+}
+
+#trainingText,
+#nextCharacter {
+    font-size: 24px;
+    font-weight: bold;
 }

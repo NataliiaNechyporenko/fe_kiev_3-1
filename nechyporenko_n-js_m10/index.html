@@ -7,18 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Homework, New modules, m8 by Nechyporenko Nataliia</title>
+    <title>Homework, New modules, m10 by Nechyporenko Nataliia</title>
 </head>
 
 <body>
     <div class="page-wrapper">
         <div class="contant-wrapper">
             <header>
-                <h1 class="title">JS New Modules, Module 8, Nechyporenko N</h1>
+                <h1 class="title">JS New Modules, Module 10, Nechyporenko N</h1>
             </header>
             <section class="contant">
-                <div class="sound">
-                    <label class="volume"><input type="checkbox" id="volume" name="volume" checked> Sound</label>
+                <div class="options">
+                    <p class="contant__text">Chose language for training:
+                    <select id="userLang" name="language">
+                        <option value="0">English</option>
+                        <option value="1">Russian</option>
+                        <option value="2">Ukranian</option>
+                    </select>
+                </p>
+                <p class="contant__text">Text for training:<br><span id="trainingText"></span></p>
+                <label class="volume"><input type="checkbox" id="volume" name="volume" checked> Sound</label>
+                    <p class="contant__text">Time: <span id="time">0</span></p>
+                    <p class="contant__text">Number of correctly typed letters: <span id="numCorrectLetters">0</span></p>
+                    <p class="contant__text">Next character: <span id="nextCharacter"></span></p>
+                    <p class="contant__text">Typing speed: <span id="typingSpeed">0</span> chars per second</p>
+                    <p class="contant__text">You made <span id="mistakes">0</span> mistakes.</p>
+                    <p class="contant__text">Your best result: <span id="bestResult">0</span></p>
+                    <a href="#" id="startTraining">Start training!</a>
                 </div>
                 <div class="keyboard">
 
