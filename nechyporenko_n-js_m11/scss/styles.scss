@@ -1,0 +1,21 @@
+$headers-color: #00796b;
+
+.page {
+    border-left: 1px double $headers-color;
+    border-right: 1px double $headers-color;
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 35px;
+}
+
+.main-haeder {
+    color: $headers-color;
+    font-size: 32px;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}

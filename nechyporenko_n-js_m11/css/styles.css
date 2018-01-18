@@ -1,0 +1,18 @@
+.page {
+  border-left: 1px double #00796b;
+  border-right: 1px double #00796b;
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 35px; }
+
+.main-haeder {
+  color: #00796b;
+  font-size: 32px; }
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-top: 1rem; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JS Module 11 Homework, Nechyporenko N</title>
+</head>
+
+<body>
+    <div class="page">
+        <h4 class="teal-text text-darken-2">JS Module 11 Homework, Nechyporenko N</h1>
+    <h5 class="teal-text text-darken-2">Add User</h5>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s4">
+                    <input id="addName" type="text" class="validate">
+                    <label class="active" for="name">Name</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="addScore" type="number" class="validate">
+                    <label  class="active" for="addScore">Score</label>
+                </div>
+                <div class="input-field col s4">
+                    <a class="waves-effect waves-light btn" id="addUserBtn">Add User</a>
+                </div>
+            </div>
+         </form>
+    </div>
+    <div class="row">
+        <div class="col s8">
+        <h5 class="teal-text text-darken-2">Change User</h5>
+            <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s2">
+                        <input id="findId" type="number" class="validate">
+                        <label  class="active" for="findId">ID</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="changeName" type="text" class="validate">
+                        <label  class="active" for="changeName">Name</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="changeScore" type="number" class="validate">
+                        <label  class="active" for="changeScore">Score</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <a class="waves-effect waves-light btn" id="changeUserBtn">Change User</a>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="col s4">
+        <h5 class="teal-text text-darken-2">Delete User</h5>
+            <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="delId" type="number" class="validate">
+                        <label  class="active" for="delId">ID</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <a class="waves-effect waves-light btn" id="delUserBtn">Delete User</a>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <table class="centered bordered highlight">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>ID</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="js-tbody"></tbody>
+    </table>
+
+<button id="getUsersBtn" class="btn">Получить</button>
+
+<!-- Шаблон одной строки для tbody -->
+<script type="text/template" id="table-row">
+  <tr scope="row">
+    <td><%- name%></td>
+    <td><%- id%></td>
+    <td><%- score%></td>
+  </tr>
+</script>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
