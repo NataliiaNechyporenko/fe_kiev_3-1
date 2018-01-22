@@ -18,10 +18,11 @@ const uglify = require('gulp-uglify');
 gulp.task('js', () => {
     //Берем все файлы js в папке src/js
     return gulp.src('./src/js/*.js')
-    //c помощью babel-я преобразовыаем js файлы ES6 в синтаксис ES5
+        //c помощью babel-я преобразовыаем js файлы ES6 в синтаксис ES5
         .pipe(babel({
             presets: ['env']
         }))
+        // c помощью gulp-concat все js файлы сливаем в один
         .pipe(concat('script.js'))
         // выкидываем js файлы в папку dist/js
         .pipe(gulp.dest('./dist/js'))
@@ -31,6 +32,7 @@ gulp.task('js', () => {
         }));
 });
 
+//Таск для преобразования кода в js файлах в одну строку
 gulp.task('compress', function (cb) {
   pump([
         gulp.src('./src/js/*.js'),
