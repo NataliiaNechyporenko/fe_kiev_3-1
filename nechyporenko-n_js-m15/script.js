@@ -1,53 +1,66 @@
 let startBtn = document.querySelector("#start_btn"),
     stopBtn = document.querySelector("#stop_btn");
 
-class Timer {
-    constructor (startTime, stopTime) {
-        this.startTime = startTime;
-        this.stopTime = stopTime;
-        this.interval = this.stopTime - this.startTime;
+class Shape {
+    constructor (color, initX, initY) {
+        this.color = color;
+        this.initX = initX;
+        this.initY = initY;
     }
-    start () {
-        this.startTime = Date.now();
+    getColor() {
+        return this.color;
     }
-    stop () {
-        this.stopTime = Date.now();
-        this.interval = (this.stopTime - this.startTime)/1000;
+    setColor (val) {
+        this.color = val;
     }
-    getTime () {
-        console.log(`Timer interval = ${this.interval} sec`);
+    getCoords() {
+        return `x: ${this.initX}, y: ${this.initY}`;
     }
-    static timeToNY () {
-        let today = new Date();
-        let nextYear = today.getFullYear() + 1;
-        let ny = new Date(nextYear, 1, 1, 0, 0, 1);
-        let toNY = parseInt( (ny - today)/(24*60*60*1000) );
-        console.log(`Days to NY ${toNY}`);
+    moveTo(newX, newY) {
+        this.initX = newX;
+        this.initY = newY;
     }
 };
 
-let firstTimer = new Timer (12, 20);
-console.log(firstTimer);
-
-let secondTimer = new Timer (356, 798);
-console.log(secondTimer);
-
-let thirdTimer = new Timer (45, 76);
-console.log(thirdTimer);
-
-let stopwatch = new Timer ();
-
-let clickHandler = (event) => {
-    if (event.target == startBtn) {
-        console.log(`Start`);
-        stopwatch.start();
+class Rectangle extends Shape {
+    constructor(color, initX, initY, initWidth, initHeight) {
+        super (color, initX, initY);
+        this.initWidth = initWidth;
+        this.initHeight = initHeight;
     }
-    if (event.target == stopBtn) {
-        console.log(`Stop`);
-        stopwatch.stop();
-        console.log(stopwatch);
-        console.log(`Timer interval = ${stopwatch.interval} sec`);
-    };
+    setWidth(newWidth) {
+        this.initWidth = newWidth;
+    }
+    setHeight(newHeight) {
+        this.initHeight = newHeight;
+    }
+    getDims() {
+        return `   width: ${this.initWidth}\n   height: ${this.initHeight}`;
+    }
+    draw() {
+        console.log(`Drawing a Rectangle at:\n   (${this.getCoords()})\nWith dimentions:\n${this.getDims()}\nFilled with Color: ${this.getColor()}`);
+    }
 };
-console.log(Timer.timeToNY());
-window.addEventListener('click', clickHandler);
+
+let figure1 = new Rectangle ('#333', 20, 30, 200, 50);
+figure1.draw();
+
+class Circle extends Shape {
+    constructor (color, initX, initY, initRadius) {
+        super (color, initX, initY);
+        this.initRadius = initRadius;
+    }
+    getRadius() {
+        return `   radius: ${this.initRadius}`;
+    }
+    setRadius(val) {
+        this.initRadius = val;
+    }
+    draw() {
+        console.log(`Drawing a Circle at:\n   (${this.getCoords()})\nWith dimentions:\n${this.getRadius()}\nFilled with Color: ${this.getColor()}`);
+    }
+};
+
+let circle1 = new Circle ('#dcdcdc', 150, 150, 100);
+circle1.setRadius(120);
+circle1.draw();
