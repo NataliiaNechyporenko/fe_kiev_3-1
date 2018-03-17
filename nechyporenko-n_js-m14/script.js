@@ -19,13 +19,12 @@ Timer.prototype.stop = function() {
 
 const timer = new Timer ();
 
-let clickHandler = (event) => {
-    if (event.target === startBtn) {
-        timer.start();
-    }
-    if (event.target === stopBtn) {
-        timer.stop();
-    };
-};
+startBtn.addEventListener(
+    'click',
+    timer.start.bind(timer)
+);
 
-window.addEventListener('click', clickHandler);
+stopBtn.addEventListener(
+    'click',
+    timer.stop.bind(timer)
+);
